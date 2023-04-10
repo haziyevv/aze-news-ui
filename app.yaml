@@ -1,0 +1,7 @@
+runtime: python311
+entrypoint: gunicorn main:app -w 4 -k uvicorn.workers.UvicornWorker
+instance_class: F4
+env_variables:
+  PROJECT: 57695354106
+  ML_ENDPOINT_ID: 459978490456834048
+
